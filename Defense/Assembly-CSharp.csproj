@@ -53,6 +53,7 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\StartClick.cs" />
     <Compile Include="Assets\Scripts\TestScript.cs" />
   </ItemGroup>
   <ItemGroup>
