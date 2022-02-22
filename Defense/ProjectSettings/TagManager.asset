@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - adf
   - 
   - 
   - 
@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 1034032621
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 2548131219
     locked: 0
