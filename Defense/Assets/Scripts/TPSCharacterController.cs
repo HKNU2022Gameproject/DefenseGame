@@ -47,7 +47,7 @@ public class TPSCharacterController : MonoBehaviour
         Vector3 camAngle = cameraArm.rotation.eulerAngles;
         float x = camAngle.x - mouseDelta.y;
 
-        if(x < 180f)
+        if (x < 180f)
         {
             x = Mathf.Clamp(x, -1f, 70f);
         }
