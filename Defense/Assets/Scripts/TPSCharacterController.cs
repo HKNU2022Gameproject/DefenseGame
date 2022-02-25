@@ -11,11 +11,16 @@ public class TPSCharacterController : MonoBehaviour
 
     Animator animator;
     Rigidbody rid;
+    private PlayerInput playerInput;
+    private CharacterController characterController;
+    private float currentVelocityY;
 
     void Start()
     {
         animator = characterBody.GetComponent<Animator>();
         rid = characterBody.GetComponent<Rigidbody>();
+        playerInput = GetComponent<PlayerInput>();
+        characterController = GetComponent<CharacterController>();
     }
 
     void Update()
@@ -41,6 +46,7 @@ public class TPSCharacterController : MonoBehaviour
         // Debug.DrawRay(cameraArm.position, new Vector3(cameraArm.forward.x, 0f, cameraArm.forward.z).normalized, Color.red);
     }
 
+
     private void LookAround()
     {
         Vector2 mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
@@ -58,4 +64,5 @@ public class TPSCharacterController : MonoBehaviour
 
         cameraArm.rotation = Quaternion.Euler(x, camAngle.y + mouseDelta.x * 2, camAngle.z);
     }
+
 }
