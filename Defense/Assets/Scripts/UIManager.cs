@@ -21,28 +21,32 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Text healthText;
     [SerializeField] private Text lifeText;
-    [SerializeField] private Text scoreText;
-    [SerializeField] private Text ammoText;
+    [SerializeField] private Text bulbText;
     [SerializeField] private Text waveText;
+    [SerializeField] private Text coinText;
 
-    public void UpdateAmmoText(int magAmmo, int remainAmmo)
+    public void UpdateBulbText(int newBulb)
     {
-        ammoText.text = magAmmo + "/" + remainAmmo;
-    }
-
-    public void UpdateScoreText(int newScore)
-    {
-        scoreText.text = "Score : " + newScore;
+        bulbText.text = " " + newBulb;
     }
     
-    public void UpdateWaveText(int waves, int count)
+    public void UpdateWaveText(int waves)
     {
-        waveText.text = "Wave : " + waves + "\nEnemy Left : " + count;
+        waveText.text = " " + waves;
     }
 
     public void UpdateLifeText(int count)
     {
-        lifeText.text = "Life : " + count;
+        lifeText.text = " " + count;
+    }
+
+    public void UpdateCoinText(int count)
+    {
+        coinText.text = " " + count;
+    }
+    public void UpdateScoreText(int count)
+    {
+        coinText.text = " " + count;
     }
 
     public void UpdateCrossHairPosition(Vector3 worldPosition)
