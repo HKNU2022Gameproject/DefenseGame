@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
     
     public void UpdateWaveText(int waves, int count) // 'waveText', 남은 적의 수 UI 갱신
     {
-        waveText.text = "Wave : " + waves;
+        waveText.text = ": " + waves;
     }
 
     public void UpdateLifeText(int count)  // 'lifeText' 남은 생명 수 UI 갱신
