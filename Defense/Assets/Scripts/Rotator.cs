@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+// 게임 오브젝트를 지속적으로 회전하는 스크립트
 public class Rotator : MonoBehaviour
 {
     public float rotationSpeed = 60f;
-    void Update()
+
+    private void Update()
     {
-        // 아이템처럼 보이게 계속 회전한다.
-        transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+        transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
     }
 }
