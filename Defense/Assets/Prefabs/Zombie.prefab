@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 2272058500683493246}
   - component: {fileID: 2272058500683493245}
   m_Layer: 0
-  m_Name: Zombie 1
+  m_Name: Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,7 +399,7 @@ MonoBehaviour:
   targetEntity: {fileID: 0}
   whatIsTarget:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2048
 --- !u!1 &2272058500814993207
 GameObject:
   m_ObjectHideFlags: 0

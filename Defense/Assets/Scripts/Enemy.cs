@@ -118,8 +118,8 @@ public class Enemy : LivingEntity
         if (dead) return;
 
         // 추적 대상과의 거리를 따져서 공격을 실행할지 검사
-        if (state == State.Tracking &&
-            Vector3.Distance(targetEntity.transform.position, transform.position) <= attackDistance)
+        if ((state != State.Tracking &&
+            Vector3.Distance(targetEntity.transform.position, transform.position) > attackDistance))
         {
             BeginAttack();
         }

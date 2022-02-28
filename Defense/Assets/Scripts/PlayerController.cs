@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     public void Respawn()
     {
         gameObject.SetActive(false);
-        transform.position = Utility.GetRandomPointOnNavMesh(transform.position, 30f, NavMesh.AllAreas);
+        transform.position = new Vector3(-342, 1, 30); // 지정된 위치 리스폰
 
         gameObject.SetActive(true);
         playerMovement.enabled = true;
